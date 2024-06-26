@@ -8,6 +8,7 @@ This splits my direction to several pathways
 1. HTML
 2. CSS
 3. Javascript
+4. React
 
 ### Getting started 
 - [ ] [Learning the DOM]()
