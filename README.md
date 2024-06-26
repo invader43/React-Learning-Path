@@ -10,4 +10,12 @@ This splits my direction to several pathways
 3. Javascript
 
 ### Getting started 
-- [ ] Mercury
+- [ ] [Learning the DOM]()
+- [ ] [Understanding JavaScript DOM manipulation]()
+- [ ] [Simple TODO list app]()
+- [ ] [Learning CSS internal workings]()
+- [ ] [Integrating the CSS into TODO list app]()
+
+
+### React Journey 
+Yet to understand , but Mostly I'll be learning from the Udemy Course : [The React Mega-Tutorial](https://www.udemy.com/course/react-mega-tutorial) by Miguel Grinberg.
