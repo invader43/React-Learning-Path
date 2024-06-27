@@ -8,6 +8,8 @@
     - [\* Operator](#-operator-1)
     - [Meaning of Cascading in CSS](#meaning-of-cascading-in-css)
 - [Lecture 3  - Colors](#lecture-3----colors)
+- [Lecture 4 - Sizes](#lecture-4---sizes)
+- [Lecture 5 - Box Model](#lecture-5---box-model)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -112,3 +114,49 @@ ids > classes > elements
 All the 3 have variants with Alpha maximum
 
 Coolors.io for color palettes - [coolors.co](https://coolors.co/) , a tester for WSAG ( Web Content Accessiblity Guidelines)
+
+## Lecture 4 - Sizes
+
+| Unit | Name               | Equivalent to                 |
+|------|--------------------|-------------------------------|
+| cm   | Centimeters        | 1cm = 37.8px = 25.2/64in      |
+| mm   | Millimeters        | 1mm = 1/10th of 1cm           |
+| Q    | Quarter-millimeters| 1Q = 1/40th of 1cm            |
+| in   | Inches             | 1in = 2.54cm = 96px           |
+| pc   | Picas              | 1pc = 1/6th of 1in            |
+| pt   | Points             | 1pt = 1/72nd of 1in           |
+| px   | Pixels             | 1px = 1/96th of 1in           |
+
+We will use px - pixels , default font size for paragraphs is 16px
+
+Absolute sizes are bad because they override browser preferences , for example if the browser font size is set to small , and the p font-size is set to 32px , the text would look waaaaay bigger than its comfortable.
+```css
+p{
+    font-size: 20px;
+    width: 40ch;
+}
+```
+
+
+![Alt text](image-2.png)
+
+Width takes percentages , 
+```css
+header {
+    width: 50%;
+}
+```
+Fixes the width available for an element 
+
+1rem means 1 times the root font-size , set by the browser or anything that takes more precidence.
+Then anywhere you use 1rem will interpret it as 16px.
+
+1em is equal to the current font size
+
+For understanding vm and vh , read more on [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) , 1% of viewport width is vw , and similarly vh .
+
+## Lecture 5 - Box Model
+
+
+
+
