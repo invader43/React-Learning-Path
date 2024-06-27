@@ -12,7 +12,7 @@ This splits my direction to several pathways
 
 ### Getting started 
 - [x] [Learning the DOM]()
-- [ ] [Learning CSS internal workings]()
+- [ ] [Learning CSS internal workings](https://github.com/invader43/React-Learning-Path/blob/main/tutorials/CSS%20-%20%2011%20hrs.md)
 - [ ] [Understanding JavaScript DOM manipulation]()
 - [ ] [Simple TODO list app]()
 - [ ] [Integrating the CSS into TODO list app]()
