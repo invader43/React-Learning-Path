@@ -20,3 +20,7 @@ This splits my direction to several pathways
 
 ### React Journey 
 Yet to understand , but Mostly I'll be learning from the Udemy Course : [The React Mega-Tutorial](https://www.udemy.com/course/react-mega-tutorial) by Miguel Grinberg.
+
+
+### Live Comments 
+- Day 1 - Video for CSS Guide ended at [2:01:30](https://youtu.be/OXGznpKZ_sA?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E&t=7290)

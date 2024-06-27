@@ -12,6 +12,7 @@
 - [Lecture 5 - Box Model](#lecture-5---box-model)
   - [rem to em calculation](#rem-to-em-calculation)
     - [We talk about margins](#we-talk-about-margins)
+- [Lecture 6 - Typography](#lecture-6---typography)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -231,4 +232,28 @@ How we made a circle in this lesson by modifying border radius of a div
 ```
 Add this class to a div and you have a circle thats centered ( note how i used the auto keyword for making margin left and right the same , and equal)
 
-Thats all for today folks.
+## Lecture 6 - Typography
+Summary - font properties , how to import external fonts .
+font - 
+- Size
+- family
+- spacing
+- upperline
+- underline
+- overline
+- line spacing
+- character spacing
+- etc
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+p{
+    line-height: 1.4;
+    font-family:'Roboto',sans-serif;
+}
+```
+
+One example above to import and use Roboto font from https://fonts.google.com/.
+
