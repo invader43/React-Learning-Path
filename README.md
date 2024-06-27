@@ -11,10 +11,10 @@ This splits my direction to several pathways
 4. React
 
 ### Getting started 
-- [ ] [Learning the DOM]()
+- [x] [Learning the DOM]()
+- [ ] [Learning CSS internal workings]()
 - [ ] [Understanding JavaScript DOM manipulation]()
 - [ ] [Simple TODO list app]()
-- [ ] [Learning CSS internal workings]()
 - [ ] [Integrating the CSS into TODO list app]()
 
 
