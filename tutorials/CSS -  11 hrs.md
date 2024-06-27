@@ -10,6 +10,8 @@
 - [Lecture 3  - Colors](#lecture-3----colors)
 - [Lecture 4 - Sizes](#lecture-4---sizes)
 - [Lecture 5 - Box Model](#lecture-5---box-model)
+  - [rem to em calculation](#rem-to-em-calculation)
+    - [We talk about margins](#we-talk-about-margins)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -156,7 +158,77 @@ Then anywhere you use 1rem will interpret it as 16px.
 For understanding vm and vh , read more on [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) , 1% of viewport width is vw , and similarly vh .
 
 ## Lecture 5 - Box Model
+![Alt text](image-3.png)
+
+### rem to em calculation
+![Alt text](image-4.png)
+
+Our css that we used previously
+```css
+h1{
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
 
 
+```
+margin block size is assigned 0.67em , font size of the element is set to 3rem , that is 16*3 ie 48px .
+Now 2/3 of 48 px is around 32.16 , we can see that font size affects the margin size.
 
+This is pretty confusing to track , hence we do a css reset at the start of the css file to take care of these things manually.
 
+```*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+#### We talk about margins
+![Alt text](image-5.png)
+
+Essentially thate means we can have control over all sides of the margin 
+```css
+.container{
+    margin-top:2em;
+    margin-bottom :2em;
+    margin-left:2em;
+    margin-right:2em;
+}
+```
+Sets margin to all elements with class 'container' to 2em on all sides , and its shorthand is 'margin'.
+
+![Alt text](image-6.png)
+
+We can have similar settings for border
+```css
+.container2{
+    border-top:2px solid red;
+    border-bottom:2px solid blue;
+    border-left:2px dotted green;
+    border-right:2px solid orange;
+    font-size: 1.5rem;
+    margin: 1.5em 2em 3em 4em;
+    padding: 1.5em;
+}
+```
+
+How we made a circle in this lesson by modifying border radius of a div 
+
+```css
+.circle{
+    margin: 3rem auto;
+    background-color: goldenrod;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+}
+```
+Add this class to a div and you have a circle thats centered ( note how i used the auto keyword for making margin left and right the same , and equal)
+
+Thats all for today folks.
