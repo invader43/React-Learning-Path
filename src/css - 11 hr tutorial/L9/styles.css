@@ -1,0 +1,77 @@
+/* importing roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* lets get some css resets first */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* now our text looks normal , now we do the magic */
+body{
+    margin: 0.5rem;
+    font-family: "Roboto" , sans-serif;
+    text-align: center;
+}
+/* this does margin spacing + font changes + Center alignment */
+/* now we tackle the nav element */
+
+
+
+/* root element size is usually 16px , rem stands for that only */
+nav{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem; 
+    line-height: 7rem; /* spacing between consecutive lines , properties are normal or % or px*/
+
+}
+
+/* lets tackle the h1 formatting now */
+/*  */
+h2{
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0; /* top-left | top-right | bottom-right | bottom-left */
+}
+
+/* now we manage the unordered list , note here that we try and go into each layer like an onion , outer layers first */
+
+ul{
+    list-style-position: none;/* here we specify the position of the markers for the unordered list*/
+    list-style-type: none; /* we are setting the type of the markers , in this case we dont need markers so none*/
+}
+
+
+/* adding a line above each sublink to beautify */
+li{
+    border-top:1px solid #333;
+}
+
+
+/* sets the a element to block instead of inline which it was previously , so we have full sized borders */
+li a{
+    display: block;
+}
+
+/* read group selectors to understand the below selection */
+
+/* answer is that we select all the a tags inside li tags , and the a tags inside li that are visited (pseudo classes) */
+li a,li a:visited{
+    text-decoration: none; /* we are removing the underlines and stuff */
+    color: #333; /* font color */
+}
+
+/* make the boxes black on hovering */
+li a:hover,li a:focus{
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* last child in the unordered doesnt have rounded edges , but our menu bar has , so we round that too*/
+li:last-child a{
+    border-radius:0 0 2rem 2rem;
+}

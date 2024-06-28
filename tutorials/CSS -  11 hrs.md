@@ -16,6 +16,18 @@
 - [Lecture 7 - Links](#lecture-7---links)
   - [Introducing the ":" Operator](#introducing-the--operator)
 - [Lecture 7 - Lists](#lecture-7---lists)
+- [Lecture 8 - Lists](#lecture-8---lists)
+- [Lecture 9 - Mini Project](#lecture-9---mini-project)
+    - [CSS Details and Explanations](#css-details-and-explanations)
+    - [Importing Font](#importing-font)
+    - [CSS Resets](#css-resets)
+    - [Body Styling](#body-styling)
+    - [Navigation Bar Styling](#navigation-bar-styling)
+    - [Heading Styling](#heading-styling)
+    - [Unordered List Styling](#unordered-list-styling)
+    - [List Item Styling](#list-item-styling)
+    - [Anchor Tag Styling](#anchor-tag-styling)
+  - [Final Menu bar looks like this](#final-menu-bar-looks-like-this)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -316,3 +328,145 @@ Gives some weird numbering since theres no negative roman numbers
 ![](image-10.png)
 
 
+## Lecture 8 - Lists 
+Self explanatory 
+
+## Lecture 9 - Mini Project 
+We try to combine all the important stuff we studied so far , and make a formatted navbar.
+
+#### CSS Details and Explanations
+
+The comments in the CSS file provide guidance and reasoning behind each styling decision. Below are the details:
+
+#### Importing Font
+
+```css
+/* importing roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+```
+
+
+We are importing the "Roboto" font from Google Fonts to ensure that our text is displayed using this specific typeface across all browsers and devices.
+
+#### CSS Resets
+
+```css
+/* lets get some css resets first */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+
+CSS resets help to standardize the styling across different browsers by removing default margins and padding, and setting `box-sizing` to `border-box` so that padding and borders are included within the element's total width and height.
+
+#### Body Styling
+
+```css
+/* now our text looks normal , now we do the magic */
+body{
+    margin: 0.5rem;
+    font-family: "Roboto" , sans-serif;
+    text-align: center;
+}
+/* this does margin spacing + font changes + Center alignment */
+```
+
+
+The body element is styled with a small margin to give some space around the content. The font-family is set to "Roboto" with a fallback to sans-serif, and text alignment is centered for better visual presentation.
+
+#### Navigation Bar Styling
+
+```css
+/* now we tackle the nav element */
+/* root element size is usually 16px , rem stands for that only */
+nav{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem; 
+    line-height: 7rem; /* spacing between consecutive lines , properties are normal or % or px*/
+}
+```
+
+The navigation bar (`nav`) is styled with a solid border, rounded corners, centered alignment with auto margins, and a maximum width of 600px. The font size is set relative to the root element's size, and line height is adjusted for better spacing between lines.
+
+#### Heading Styling
+
+```css
+/* lets tackle the h1 formatting now */
+h2{
+    background-color: gold;
+    border-radius: 2rem 2rem 0 0; /* top-left | top-right | bottom-right | bottom-left */
+}
+```
+
+
+The heading (`h2`) within the navigation bar is given a gold background color and rounded corners on the top left and right sides to visually distinguish it from other elements.
+
+#### Unordered List Styling
+
+```css
+/* now we manage the unordered list , note here that we try and go into each layer like an onion , outer layers first */
+ul{
+    list-style-position: none;/* here we specify the position of the markers for the unordered list*/
+    list-style-type: none; /* we are setting the type of the markers , in this case we dont need markers so none*/
+}
+```
+
+
+The unordered list (`ul`) is styled to remove the default list markers. This ensures that the list items do not have any bullets or numbers, giving a cleaner look.
+
+#### List Item Styling
+
+```css
+/* adding a line above each sublink to beautify */
+li{
+    border-top:1px solid #333;
+}
+```
+
+
+Each list item (`li`) is given a top border to visually separate them, enhancing the appearance of the navigation menu.
+
+#### Anchor Tag Styling
+
+```css
+/* sets the a element to block instead of inline which it was previously , so we have full sized borders */
+li a{
+    display: block;
+}
+
+/* read group selectors to understand the below selection */
+
+/* answer is that we select all the a tags inside li tags , and the a tags inside li that are visited (pseudo classes) */
+li a, li a:visited{
+    text-decoration: none; /* we are removing the underlines and stuff */
+    color: #333; /* font color */
+}
+
+/* make the boxes black on hovering */
+li a:hover, li a:focus{
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* last child in the unordered doesnt have rounded edges , but our menu bar has , so we round that too*/
+li:last-child a{
+    border-radius:0 0 2rem 2rem;
+}
+```
+
+
+- `li a`: Sets anchor tags within list items to block display, ensuring the full-sized clickable area.
+- `li a, li a:visited`: Removes text decoration (underlines) and sets the font color to `#333`.
+- `li a:hover, li a:focus`: Changes the background color to `#333` and font color to `whitesmoke` when hovered or focused, and changes the cursor to pointer for better user interaction.
+- `li:last-child a`: Adds rounded corners to the bottom of the last anchor tag within the list, maintaining consistent styling with the navigation bar's overall rounded appearance.
+
+### Final Menu bar looks like this
+
+<center><img src="image-11.png"> </center>
