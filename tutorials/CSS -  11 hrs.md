@@ -13,6 +13,9 @@
   - [rem to em calculation](#rem-to-em-calculation)
     - [We talk about margins](#we-talk-about-margins)
 - [Lecture 6 - Typography](#lecture-6---typography)
+- [Lecture 7 - Links](#lecture-7---links)
+  - [Introducing the ":" Operator](#introducing-the--operator)
+- [Lecture 7 - Lists](#lecture-7---lists)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -256,4 +259,60 @@ p{
 ```
 
 One example above to import and use Roboto font from https://fonts.google.com/.
+
+## Lecture 7 - Links
+Similar to text .
+
+Visited vs unvisited 
+
+![Alt text](image-7.png)
+
+Purple is visited .
+
+Also hovering changes the cursor
+
+Also click holding changes color to red 
+
+![Alt text](image-8.png)
+
+### Introducing the ":" Operator
+This operator is used for selecting pseudo classes for a DOM object. For example , visited pseudo class for anchor tag
+
+```css
+a:visited{
+    color:purple;
+}
+```
+
+Also the hover pseudoclass.
+```css
+a:hover{
+    color:green;
+}
+```
+
+## Lecture 7 - Lists 
+Doesnt feel like it needs a section but here it is :
+
+\<ol>  and \<ul> tags are used for opening an ordered and unordered list respectively , with an item inside by an \<li> tag.
+
+Some things you can do to the lists are mentioned below:
+```css
+ol{
+    list-style-type:lower-roman;
+}
+```
+![](image-9.png)
+We can also add attributes to the list to change some things like 
+- start 
+  - Changes the start value of the ordered list
+- reversed
+  - reverse counting to zero
+  
+Gives some weird numbering since theres no negative roman numbers
+```html
+<ol start="1" reversed="true">
+```
+![](image-10.png)
+
 

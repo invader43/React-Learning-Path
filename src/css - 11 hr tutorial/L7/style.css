@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+}
+
+/* input button {
+    font: inherit;
+} */
+
+p{
+    line-height: 1.4;
+    font-family:'Roboto',sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color:hsl(207, 92%, 66%);
+    ;
+}
+
+main{
+    opacity: 0.4;
+}
+
+a:visited{
+    color:hsl(207, 92%, 66%);
+}
+
+a:hover ,a:focus    {
+    color:hsl(207, 100%, 50%,0.8);
+}
+
+a:active{
+    color: dodgerblue;
+}
+
+
+
+/* Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective!
+a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names 
+are not case-sensitive. */
