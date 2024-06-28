@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-size: 2rem;
+    font-family:'Roboto',sans-serif;
+}
+
+/* today we learn about the display property  */
+/* we know that paragraphs are block elements and span is an inline element we understand it by 
+coloring it differently
+
+*/
+
+
+p{
+    background-color: lightgray;
+    margin: 100px 50px;
+}
+
+
+/* we see that block elements by default have 100% width and stack on top of each other */
+/* also it doesnt have to 100% of the view port */
+
+/* since main element is also a block lets try setting the color of it to see where it is*/
+
+main{
+    background-color: skyblue;
+    width: 50%;
+}
+
+/* this example explains that the block elements occupy 100% of the width available from the parent 
+ie , in this case , the paragraph elements cover the 100% of the main width
+*/
+
+.opposite{
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 100px;
+    height: 200px;
+    padding: 4rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color:black;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    margin-inline:0.5rem;
+}
+
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover,li a:focus{
+    text-decoration: underline;
+    
+}

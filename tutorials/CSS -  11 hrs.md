@@ -28,6 +28,10 @@
     - [List Item Styling](#list-item-styling)
     - [Anchor Tag Styling](#anchor-tag-styling)
   - [Final Menu bar looks like this](#final-menu-bar-looks-like-this)
+- [Lecture 10 - Display](#lecture-10---display)
+  - [Paragraph Element](#paragraph-element)
+  - [Span Element](#span-element)
+  - [Main Element](#main-element)
 
 
 ## Lecture 1 - CSS Anatomy
@@ -470,3 +474,75 @@ li:last-child a{
 ### Final Menu bar looks like this
 
 <center><img src="image-11.png"> </center>
+
+## Lecture 10 - Display 
+
+![Alt text](image-12.png)
+
+We learn about display , its either inline or block , we see examples to understand it.
+
+### Paragraph Element
+
+```css
+p {
+    background-color: lightgray;
+}
+```
+Paragraphs are block elements. This rule sets their background color to light gray.
+
+### Span Element
+
+```css
+span {
+    background-color: green;
+}
+```
+Spans are inline elements. This rule sets their background color to green.
+
+### Main Element
+
+```css
+main {
+    background-color: skyblue;
+    width: 50%;
+}
+```
+The main element is a block element. This rule sets its background color to sky blue and its width to 50%.
+
+- **Block Elements**: Paragraphs (p) and the main element are block elements. They stack on top of each other and can occupy the full width of their parent container, but they don't always have to.
+- **Inline Elements**: Spans (span) are inline elements and do not stack like block elements. Instead, they flow within the text.See the span tagged text inside the paragraph in second line
+
+In this case, the paragraph elements cover 100% of the main element's width, illustrating how block elements behave within a parent block element.
+
+
+Lets now try to modify properties for inline elements 
+```css
+.opposite{
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 100px;
+    height: 200px;
+    padding: 4rem;
+}
+```
+
+![Alt text](image-13.png)
+
+we see that padding 4rem overlaps with the other paragraph text , also height and margin-top dont seem to work anything on them .
+
+```css
+display: inline-block;
+```
+
+Adding this to the opposite class , changes it to an inline block , acting like a block inside an inline space , something like the below scene happens now :
+
+![Alt text](image-14.png)
+
+The block properties work now .
+
+Now the summary :
+- Block level elements stack on top of each other
+- Inline elements donot stack on top of each other
+- Block elements have an automatic 100% width derived from the parent element
+- Inline elements take up width equal to their content
+- Inline-block have hybrid , they take up the space of the margin + padding + content but dont create a new line.
