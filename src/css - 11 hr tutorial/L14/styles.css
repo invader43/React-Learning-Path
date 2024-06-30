@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Roboto",sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; below is the condensed version */
+    flex-flow: row wrap;
+    align-content: space-evenly; /*
+    Aligns a flex container's lines within the flex container when there is extra space in 
+    the cross-axis, similar to how 'justify-content' aligns individual items within the 
+    main-axis.
+    */
+}
+
+.box{
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    /* these below are the 3 things to center a container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 1;
+    flex-basis: 250px;  shorthand below*/
+    flex:1 1 150px;
+}
+
+.box:nth-child(2){
+    /* flex-grow: 2; Sets the flex grow factor. Negative numbers are invalid.
+    flex-shrink: 2; */
+    flex:2 2 150px;
+
+    order: 1;
+}

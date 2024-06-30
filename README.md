@@ -29,3 +29,5 @@ Yet to understand , but Mostly I'll be learning from the Udemy Course : [The Rea
 - Day 2 - I followed through till []() , and was able to attempt to clone this [cooking website](https://www.gimmesomeoven.com/spaghetti-aglio-e-olio/) , here's the attempt to it - [cookingwebsite clone](https://github.com/invader43/React-Learning-Path/tree/main/potential-clones/cookingwebsite%20clone) , here's the [render](http://htmlpreview.github.io/?https://github.com/invader43/React-Learning-Path/blob/main/potential-clones/cookingwebsite%20clone/index.html)
 - Started React Mega Tutorial 
 - Realised I need to complete learning css and js to understand React.
+- Completed till lecture 14 - flex boxes , have to play flexbox froggy
+- Day 3 - Video for CSS Guide ended at [4:21:35](https://youtu.be/OXGznpKZ_sA?t=15695)
