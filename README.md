@@ -28,3 +28,4 @@ Yet to understand , but Mostly I'll be learning from the Udemy Course : [The Rea
 - Day 1 - Video for CSS Guide ended at [2:01:30](https://youtu.be/OXGznpKZ_sA?list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E&t=7290)
 - Day 2 - I followed through till []() , and was able to attempt to clone this [cooking website](https://www.gimmesomeoven.com/spaghetti-aglio-e-olio/) , here's the attempt to it - [cookingwebsite clone](https://github.com/invader43/React-Learning-Path/tree/main/potential-clones/cookingwebsite%20clone) , here's the [render](http://htmlpreview.github.io/?https://github.com/invader43/React-Learning-Path/blob/main/potential-clones/cookingwebsite%20clone/index.html)
 - Started React Mega Tutorial 
+- Realised I need to complete learning css and js to understand React.
