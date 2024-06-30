@@ -546,3 +546,5 @@ Now the summary :
 - Block elements have an automatic 100% width derived from the parent element
 - Inline elements take up width equal to their content
 - Inline-block have hybrid , they take up the space of the margin + padding + content but dont create a new line.
+
+
